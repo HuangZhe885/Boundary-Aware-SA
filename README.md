@@ -9,9 +9,9 @@ don't contain objects' points in the last layer, degrading 3D object detection p
 ![BA-Net](https://user-images.githubusercontent.com/44192081/195514333-1c6ca613-44dd-4938-9fec-00447fa1ce0b.png)
 
 ## Main Result
-we have proposed a lightweight and efficient Boundary-Aware Set Abstraction (BA-Net) including a Boundary Prediction Model, a Point Segmentation Module and a Boundary-guided Farthest Point Sampling Method. Our main concept is to incorporate boundary and semantic information into the SA stage for guiding the point-based backbone to better sampling potential objects. The experimental results show that BA-Net achieves the better 3D detection performance on the official ranking metric for the KITTI benchmark. Additionally, it is an easy-to-plug-in module and able to boost various point-based
-detectors, including single-stage and twostage ones. Our proposed method provides a promising direction for point-based
-detection. Here we present experimental results evaluated on the KITTI validation set.
+Harder instances contain fewer LiDAR points and are not likely to be selected, therefore, it is difficult for them to survive in the vanilla FPS down-sampling, and the features for remote (or small) instances cannot be fully transmitted to the next layer of the network, while BA-Net
+can keep adequate interior boundary points of different foreground instances. It preserves rich information for regression and classification
+Here we present experimental results evaluated on the KITTI validation set.
 
 <img width="638" alt="image" src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png">
 
