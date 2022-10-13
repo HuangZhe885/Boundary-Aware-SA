@@ -9,5 +9,8 @@ don't contain objects' points in the last layer, degrading 3D object detection p
 ![BA-Net](https://user-images.githubusercontent.com/44192081/195514333-1c6ca613-44dd-4938-9fec-00447fa1ce0b.png)
 
 ## Main Result
+Here we present experimental results evaluated on the KITTI validation set and the corresponding pretrained models.
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png">
 
-<img width="1012" alt="image" src="https://user-images.githubusercontent.com/44192081/195514650-dd5f7ee2-400b-4dc8-8112-47596174237d.png">
+Visualizing detection results on KITTI val split. The ground truth and predictions are labeled in red and green respectively. Pink points mark the 512 key points sampled in last SA layer.
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/44192081/195516445-83972293-71b2-476b-8217-7532d3cafebd.png">
