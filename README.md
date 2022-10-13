@@ -17,9 +17,9 @@ don't contain objects' points in the last layer, degrading 3D object detection p
 Method | Easy | Mod. | Hard | mAP
 --------- | --------- | ------------- | ------------- | ------------- |
 PointRCNN|91.57| 82.24 |80.45| 84.75
-**PointRCNN+BA-Net|+0.75| +0.8| +1.86 |+1.14**
+PointRCNN+BA-Net|**+0.75**| **+0.8**| **+1.86** |**+1.14**
 3DSSD|91.54 |83.46 |82.18 |85.73
-**3DSSD+BA-Net|+0.89 |+1.93 |+0.38| +1.06**
+3DSSD+BA-Net|**+0.89** |**+1.93** |**+0.38**| **+1.06**
 
 
 
