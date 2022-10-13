@@ -16,12 +16,15 @@ don't contain objects' points in the last layer, degrading 3D object detection p
 
 
 Visualizing detection results on KITTI val split. The ground truth and predictions are labeled in red and green respectively. Pink points mark the 512 key points sampled in last SA layer.
-<img width="785" alt="image" src="https://user-images.githubusercontent.com/44192081/195516445-83972293-71b2-476b-8217-7532d3cafebd.png">
 
 Harder instances contain fewer LiDAR points and are not likely to be selected, therefore, it is difficult for them to survive in the vanilla FPS down-sampling, and the features for remote (or small) instances cannot be fully transmitted to the next layer of the network, while BA-Net
 can keep adequate interior boundary points of different foreground instances. It preserves rich information for regression and classification
 Here we present experimental results evaluated on the KITTI validation set.
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/44192081/195516445-83972293-71b2-476b-8217-7532d3cafebd.png">
 
+
+
+Snapshots of our 3D detection results on row 1 (left is 3DSSD, right is BA-Net) on the KITTI validation set. The predicted bounding boxes are shown in green, and are project back onto the color images in pink (2th rows) for visualization.
 <img src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png" width="50%">
 
 
