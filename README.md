@@ -56,7 +56,7 @@ Please download the official [KITTI 3D object detection dataset](https://www.cvl
 python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
 ```
 
-# Training & Testing
+
 ## Train a model
 You could optionally add extra command line parameters --batch_size ${BATCH_SIZE} and --epochs ${EPOCHS} to specify your preferred parameters.
 
