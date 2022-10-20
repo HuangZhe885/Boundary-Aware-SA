@@ -22,22 +22,6 @@ PointRCNN+BA-Net|**+0.75**| **+0.8**| **+1.86** |**+1.14**
 3DSSD+BA-Net|**+0.89** |**+1.93** |**+0.38**| **+1.06**
 
 
-
-Visualizing detection results on KITTI val split. The ground truth and predictions are labeled in red and green respectively. Pink points mark the 512 key points sampled in last SA layer.
-
-Harder instances contain fewer LiDAR points and are not likely to be selected, therefore, it is difficult for them to survive in the vanilla FPS down-sampling, and the features for remote (or small) instances cannot be fully transmitted to the next layer of the network, while BA-Net
-can keep adequate interior boundary points of different foreground instances. It preserves rich information for regression and classification
-Here we present experimental results evaluated on the KITTI validation set.
-<img width="785" alt="image" src="https://user-images.githubusercontent.com/44192081/195516445-83972293-71b2-476b-8217-7532d3cafebd.png">
-
-
-
-Snapshots of our 3D detection results on row 1 (left is 3DSSD, right is BA-Net) on the KITTI validation set. The predicted bounding boxes are shown in green, and are project back onto the color images in pink (2th rows) for visualization.
-
-<img src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png" width="50%">
-
-
-
 ## Usage: Preparation
 All the codes are tested in the following environment:
 * Linux (tested on Ubuntu 14.04/16.04/18.04/20.04/21.04)
@@ -83,6 +67,22 @@ python train.py --cfg_file ${CONFIG_FILE}
 ```
 python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --eval_all
 ```
+## Visualization
+
+
+Visualizing detection results on KITTI val split. The ground truth and predictions are labeled in red and green respectively. Pink points mark the 512 key points sampled in last SA layer.
+
+Harder instances contain fewer LiDAR points and are not likely to be selected, therefore, it is difficult for them to survive in the vanilla FPS down-sampling, and the features for remote (or small) instances cannot be fully transmitted to the next layer of the network, while BA-Net
+can keep adequate interior boundary points of different foreground instances. It preserves rich information for regression and classification
+Here we present experimental results evaluated on the KITTI validation set.
+<img width="785" alt="image" src="https://user-images.githubusercontent.com/44192081/195516445-83972293-71b2-476b-8217-7532d3cafebd.png">
+
+
+
+Snapshots of our 3D detection results on row 1 (left is 3DSSD, right is BA-Net) on the KITTI validation set. The predicted bounding boxes are shown in green, and are project back onto the color images in pink (2th rows) for visualization.
+
+<img src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png" width="50%">
+
 ## Acknowledgement
 
 This project is built with [OpenPCDet](https://github.com/blakechen97/SASA/blob/main/OpenPCDet.md), a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official [github repository](https://github.com/open-mmlab/OpenPCDet) for more information.
