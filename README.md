@@ -51,9 +51,20 @@ NOTE: Please re-install pcdet v0.5 by running python setup.py develop
 ```
 git clone https://github.com/HuangZhe885/Boundary-Aware-SA.git
 cd Boundary-Aware-SA
+pip install -r requirements.txt 
+python setup.py develop 
+
 ```
+install spconv
 
+```
+git clone https://github.com/traveller59/spconv.git --recursive
+cd spconv
+python setup.py bdist_wheel
+cd ./dist
+pip install *
 
+```
 ## Acknowledgement
 
 This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
