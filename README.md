@@ -53,7 +53,6 @@ git clone https://github.com/HuangZhe885/Boundary-Aware-SA.git
 cd Boundary-Aware-SA
 pip install -r requirements.txt 
 python setup.py develop 
-
 ```
 install spconv
 
@@ -63,8 +62,19 @@ cd spconv
 python setup.py bdist_wheel
 cd ./dist
 pip install *
-
 ```
+
+## Dataset
+Boundary-Aware-SA
+├── data
+│   ├── kitti
+│   │   ├── ImageSets
+│   │   ├── training
+│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes)
+│   │   ├── testing
+│   │   ├── calib & velodyne & image_2  
+├── pcdet
+├── tools
 ## Acknowledgement
 
 This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
