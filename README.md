@@ -85,4 +85,6 @@ python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --eval_all
 ```
 ## Acknowledgement
 
-This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
+This project is built with [OpenPCDet](https://github.com/blakechen97/SASA/blob/main/OpenPCDet.md), a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official [github repository](https://github.com/open-mmlab/OpenPCDet) for more information.
+
+
