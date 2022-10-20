@@ -37,6 +37,15 @@ Snapshots of our 3D detection results on row 1 (left is 3DSSD, right is BA-Net) 
 <img src="https://user-images.githubusercontent.com/44192081/195514942-9f0f384e-7fac-4677-8212-9d85ad3eb2b1.png" width="50%">
 
 
+
+## Usage: Preparation
+All the codes are tested in the following environment:
+* Linux (tested on Ubuntu 14.04/16.04/18.04/20.04/21.04)
+* Python 3.6+
+* PyTorch 1.1 or higher (tested on PyTorch 1.1, 1,3, 1,5~1.10)
+* CUDA 9.0 or higher (PyTorch 1.3+ needs CUDA 9.2+)
+* spconv v1.0 (commit 8da6f96) or spconv v1.2 or spconv v2.x
+
 ## Acknowledgement
 
 This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
