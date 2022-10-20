@@ -71,6 +71,18 @@ Please download the official [KITTI 3D object detection dataset](https://www.cvl
 ```
 python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
 ```
+
+# Training & Testing
+## Train a model
+You could optionally add extra command line parameters --batch_size ${BATCH_SIZE} and --epochs ${EPOCHS} to specify your preferred parameters.
+
+```
+python train.py --cfg_file ${CONFIG_FILE}
+```
+## Test a model
+```
+python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --eval_all
+```
 ## Acknowledgement
 
 This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
