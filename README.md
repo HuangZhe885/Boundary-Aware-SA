@@ -47,9 +47,10 @@ All the codes are tested in the following environment:
 * spconv v1.0 (commit 8da6f96) or spconv v1.2 or spconv v2.x
 
 ## Building Kernel
+NOTE: Please re-install pcdet v0.5 by running python setup.py develop
 ```
 git clone https://github.com/HuangZhe885/Boundary-Aware-SA.git
-cd 
+cd Boundary-Aware-SA
 ```
 
 
