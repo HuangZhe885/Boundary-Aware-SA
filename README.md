@@ -24,11 +24,11 @@ PointRCNN+BA-Net|**+0.75**| **+0.8**| **+1.86** |**+1.14**
 
 ## Usage: Preparation
 All the codes are tested in the following environment:
-* Linux (tested on Ubuntu 14.04/16.04/18.04/20.04/21.04)
+* Linux (tested on 18.04)
 * Python 3.6+
-* PyTorch 1.1 or higher (tested on PyTorch 1.1, 1,3, 1,5~1.10)
-* CUDA 9.0 or higher (PyTorch 1.3+ needs CUDA 9.2+)
-* spconv v1.0 (commit 8da6f96) or spconv v1.2 or spconv v2.x
+* PyTorch 1.3
+* CUDA 11.0
+* spconv v2.x
 
 ## Building Kernel
 NOTE: Please re-install pcdet v0.5 by running python setup.py develop
