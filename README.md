@@ -27,7 +27,7 @@ All the codes are tested in the following environment:
 * Linux (tested on 18.04)
 * Python 3.6+
 * PyTorch 1.3
-* CUDA 11.0
+* CUDA 11.6
 * spconv v2.x
 
 ## Building Kernel
