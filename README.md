@@ -65,16 +65,12 @@ pip install *
 ```
 
 ## Dataset
-Boundary-Aware-SA
-├── data
-│   ├── kitti
-│   │   ├── ImageSets
-│   │   ├── training
-│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes)
-│   │   ├── testing
-│   │   ├── calib & velodyne & image_2  
-├── pcdet
-├── tools
+
+Please download the official [KITTI 3D object detection dataset](https://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) and organize the downloaded files as follows (the road planes could be downloaded from [road plane], which are optional for data augmentation in the training):
+* Generate the data infos by running the following command:
+```
+python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
+```
 ## Acknowledgement
 
 This project is built with OpenPCDet, a powerful toolbox for LiDAR-based 3D object detection. Please refer to OpenPCDet.md and the official github repository for more information.
