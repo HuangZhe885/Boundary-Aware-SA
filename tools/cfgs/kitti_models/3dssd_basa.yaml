@@ -63,7 +63,7 @@ MODEL:
         SA_CONFIG:
             NPOINT_LIST: [[4096], [512, 512], [256, 256]]
             SAMPLE_RANGE_LIST: [[[0, 16384]], [[0, 4096], [0, 4096]], [[0, 512], [512, 1024]]]
-            SAMPLE_METHOD_LIST: [['d-fps'], ['s-fps', 'b-fps'], ['b-fps', 's-fps']]
+            SAMPLE_METHOD_LIST: [['d-fps'], ['f-fps', 'b-fps'], ['b-fps', 'b-fps']]
             RADIUS: [[0.2, 0.4, 0.8], [0.4, 0.8, 1.6], [1.6, 3.2, 4.8]]
             NSAMPLE: [[32, 32, 64], [32, 32, 64], [32, 32, 64]]
             MLPS: [[[16, 16, 32], [16, 16, 32], [32, 32, 64]],
