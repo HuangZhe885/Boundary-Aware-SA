@@ -1,4 +1,4 @@
-# Boundary-Aware Set Abstraction for 3D Object Detection
+# An object detection algorithm combining semantic and geometric information of the 3D point cloud
 
 
 
