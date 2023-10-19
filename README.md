@@ -1,5 +1,4 @@
-# An object detection algorithm combining semantic and geometric information of the 3D point cloud
-
+# [An object detection algorithm combining semantic and geometric information of the 3D point cloud](https://www.sciencedirect.com/science/article/abs/pii/S147403462300099X)
 
 
 <img src="https://user-images.githubusercontent.com/44192081/195514096-248fe526-d9b3-486f-8ba9-4c2145086457.png" width="70%">
